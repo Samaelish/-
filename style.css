@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  background: linear-gradient(to right, lightblue, yellow);
+  background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
   font-family: 'Courier New', Courier, monospace;
+  color: darkgreen;
 }
 
 .container {
