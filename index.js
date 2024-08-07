@@ -1,11 +1,10 @@
-const memeCallBtn = document.querySelector('.meme-call-btn')
+const memeCallBtnEl = document.querySelector('.meme-call-btn')
 const memeContainerEl = document.querySelector('.meme-container')
 const memeImgEl = document.querySelector('.meme-img')
 const memeNameEl = document.querySelector('.meme-name')
 
 const api = '1800197c285a45b599e6d944876f40e8'
 const url = 'https://api.humorapi.com/memes/random'
-
 const options = {
   method: 'GET',
   headers: {
