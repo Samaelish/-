@@ -1,4 +1,4 @@
-const btnEl = document.getElementById('btn')
+const memeCallBtn = document.querySelector('.meme-call-btn')
 const memeContainerEl = document.querySelector('.meme-container')
 const memeImgEl = document.querySelector('.meme-img')
 const memeNameEl = document.querySelector('.meme-name')
@@ -11,23 +11,23 @@ const options = {
   },
 }
 
-btnEl.addEventListener('click', async function () {
+memeCallBtn.addEventListener('click', async function () {
   try {
-    btnEl.disabled = true
-    btnEl.innerText = 'Вызываю...'
+    memeCallBtn.disabled = true
+    memeCallBtn.innerText = 'Вызываю...'
     memeNameEl.innerText = 'Вызываю...'
     memeImgEl.src = 'spinner.svg'
     const response = await fetch(url, options)
     const data = await response.json()
-    btnEl.disabled = false
-    btnEl.innerText = 'Вызвать мем'
+    memeCallBtn.disabled = false
+    memeCallBtn.innerText = 'Вызвать мем'
     memeContainerEl.style.display = 'block'
     memeImgEl.src = data.url
     memeNameEl.innerText = data.description
   } catch (error) {
     console.log(error)
-    btnEl.disabled = false
-    btnEl.innerText = 'Вызвать мем'
+    memeCallBtn.disabled = false
+    memeCallBtn.innerText = 'Вызвать мем'
     memeNameEl.innerText = 'Ошибка случилась, попробуй ещё раз'
   }
 })
