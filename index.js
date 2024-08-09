@@ -1,4 +1,4 @@
-const memeCallBtnEl s= document.querySelector('.meme-call-btn')
+const memeCallBtnEl = document.querySelector('.meme-call-btn')
 const memeContainerEl = document.querySelector('.meme-container')
 const memeImgEl = document.querySelector('.meme-img')
 const memeNameEl = document.querySelector('.meme-name')
